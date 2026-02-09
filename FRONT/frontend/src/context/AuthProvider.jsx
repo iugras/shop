@@ -26,7 +26,7 @@ export const AuthProvider = ({ children }) => {
     const token = localStorage.getItem("token");
     if (token) {
       const payload = JSON.parse(atob(token.split(".")[1]));
-      // асинхронный вызов setUser, чтобы избежать предупреждения
+      //asynchronous call to setUser to avoid warning
       Promise.resolve().then(() => {
         setUser({ email: payload["email"], roles: payload["role"], token });
       });
