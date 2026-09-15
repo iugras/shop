@@ -35,5 +35,5 @@ This project is structured into two main folders:
 ## 1️⃣ Clone the repository
 
 ```bash
-git clone https://github.com/your-username/shop.git
+git clone https://github.com/iugras/shop.git
 cd shop
